@@ -27,4 +27,4 @@ for bar in data:
     lower_bound = max(lower_bound, price * 0.99)
     upper_bound = min(upper_bound, price * 1.01)
 
-print "Total revenue:", revenue
+print "Total revenue: %d, ROI: %d%%" % (revenue, revenue / 2000.0 * 100) # starting capital at 2000
