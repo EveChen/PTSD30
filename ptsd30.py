@@ -2,7 +2,7 @@ import sys
 import csv
 import pandas as pd
 
-df = pd.read_csv("data/TX1M.txt", sep = ',', names = ["date", "time", "open", "high", "low", "close", "volume"])
+df = pd.read_csv(sys.argv[1], sep = ',', names = ["date", "time", "open", "high", "low", "close", "volume"])
 
 position = action = 0  # 1 as Long and -1 as Short
 position_price = 0
